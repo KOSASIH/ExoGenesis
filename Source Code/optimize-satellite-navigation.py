@@ -1,0 +1,20 @@
+(defun optimize-satellite-navigation (&key (optimizer 'mgl-optimize:adam) (max-iterations 1000) (verbose t))
+  (let* ((satellite-trajectories (load-satellite-trajectories))
+         (labels (mapcar #'satellite-trajectory-label satellite-trajectories))
+         (features (mapcar #'satellite-trajectory-features satellite-trajectories))
+         (model (mgl-optimize:make-model (list (mgl-optimize:make-dense-input 100)
+                                                 (mgl-optimize:make-dense-output 1))
+                                        :optimizer optimizer
+                                        :loss-function 'mgl-optimize:mean-squared-error
+                                        :verbose verbose))
+         (training-indices (random-indices (length labels) 0.8))
+         (testing-indices (set-difference (alexandria:iota (length labels))
+                                           training-indices))
+         (training-features (select-indices features training-indices))
+         (training-labels (select-indices labels training-indices))
+         (testing-features (select-indices features testing-indices))
+         (testing-labels (select-indices labels testing-indices)))
+    (mgl-optimize:train model training-features training-labels
+                         :max-iterations max-iterations)
+    (values (mgl-optimize:predict model testing-features)
+            (mgl-optimize:predict model training-features))))
