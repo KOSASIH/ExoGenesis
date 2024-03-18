@@ -1,7 +1,5 @@
 import socket
 import threading
-import time
-import pickle
 
 class InterplanetaryCommunicationProtocol:
     def __init__(self, ip, port):

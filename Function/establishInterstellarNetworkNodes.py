@@ -1,4 +1,3 @@
-import math
 
 def establishInterstellarNetworkNodes(network_nodes, celestial_bodies, mining_operations, satellite_infrastructure, communication_protocols, resource_availability, data_transmission_security, simulation_results, pi_network_integration, satellite_deployment_automation, energy_optimization, decentralized_control, cross_planetary_transactions, resource_surveys, routing_algorithms):
     """

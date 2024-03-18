@@ -1,4 +1,3 @@
-import numpy as np
 
 def monitorSpaceResourceAvailability(resources_in_space, mining_operations, mining_efficiency, mining_rate, mining_threshold):
     """
