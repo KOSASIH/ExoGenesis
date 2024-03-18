@@ -15,9 +15,7 @@ def calculate_orbit_parameters(altitude, semi_major_axis):
     return period, semi_minor_axis, eccentricity, inclination, raan, true_anomaly
 
 def calculate_satellite_position(period, semi_major_axis, semi_minor_axis, eccentricity, inclination, raan, true_anomaly):
-    """
-    Calculate the position of a satellite given its orbital parameters.
-    """
+    """Calculate the position of a satellite given its orbital parameters."""
     mu = 3.986004418e14  # Earth's gravitational parameter (m^3/s^2)
     mean_anomaly = true_anomaly - raan
     eccentric_anomaly = solve_kepler_equation(mean_anomaly, eccentricity)
@@ -25,9 +23,7 @@ def calculate_satellite_position(period, semi_major_axis, semi_minor_axis, eccen
     return satellite_position
 
 def solve_kepler_equation(mean_anomaly, eccentricity):
-    """
-    Solve the Kepler equation for a given mean anomaly and eccentricity.
-    """
+    """Solve the Kepler equation for a given mean anomaly and eccentricity."""
     epsilon = 1e-10
     max_iterations = 100
     eccentric_anomaly = mean_anomaly
@@ -39,9 +35,7 @@ def solve_kepler_equation(mean_anomaly, eccentricity):
     return eccentric_anomaly
 
 def calculate_position_from_orbital_elements(period, semi_major_axis, semi_minor_axis, eccentricity, inclination, raan, eccentric_anomaly):
-    """
-    Calculate the position of a satellite given its orbital parameters.
-    """
+    """Calculate the position of a satellite given its orbital parameters."""
     mu = 3.986004418e14  # Earth's gravitational parameter (m^3/s^2)
     r = semi_major_axis * (1 - eccentricity ** 2) / (1 + eccentricity * math.cos(eccentric_anomaly))
     theta = math.atan2(math.sqrt(1 - eccentricity ** 2) * math.sin(eccentric_anomaly), r * (1 - eccentricity ** 2) / (1 + eccentricity * math.cos(eccentric_anomaly)) - 1)
@@ -53,9 +47,7 @@ def calculate_position_from_orbital_elements(period, semi_major_axis, semi_minor
     return np.array([x, y, z])
 
 def automate_satellite_deployment(satellite_data, launch_site, launch_vehicle):
-    """
-    Automate the deployment process of satellites.
-    """
+    """Automate the deployment process of satellites."""
     # Calculate the required orbital parameters for the satellite
     altitude = satellite_data['altitude']
     semi_major_axis = altitude + 6371e3  # Assuming a circular orbit

@@ -2,9 +2,7 @@ import os
 import subprocess
 
 def run_debugging_tool():
-    """
-    Executes a debugging tool to identify and fix issues in the codebase.
-    """
+    """Executes a debugging tool to identify and fix issues in the codebase."""
 
     # Define the debugging tool command
     debugging_tool_command = "pylint"  # You can replace this with your preferred debugging tool

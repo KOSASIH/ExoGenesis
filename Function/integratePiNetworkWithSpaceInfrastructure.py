@@ -4,9 +4,7 @@ import requests
 
 
 def integratePiNetworkWithSpaceInfrastructure(space_infrastructure_data):
-    """
-    Function to integrate the Pi Network with space-based infrastructure.
-    """
+    """Function to integrate the Pi Network with space-based infrastructure."""
     # Define the Pi Network API endpoint
     pi_network_api_endpoint = "https://api.pi.network/v1/integrate"
 
