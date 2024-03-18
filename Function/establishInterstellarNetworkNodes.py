@@ -393,11 +393,7 @@ def is_accessible(celestial_body, satellite_infrastructure):
     """
 
     # Check if the celestial body is accessible for satellite deployment
-    for infrastructure in satellite_infrastructure:
-        if infrastructure["target"] == celestial_body:
-            return True
-
-    return False
+    return any(infrastructure["target"] == celestial_body for infrastructure in satellite_infrastructure)
 
 def has_sufficient_communication_protocols(celestial_body, communication_protocols):
     """
@@ -412,11 +408,7 @@ def has_sufficient_communication_protocols(celestial_body, communication_protoco
     """
 
     # Check if the celestial body has sufficient communication protocols
-    for protocol in communication_protocols:
-        if protocol["target"] == celestial_body:
-            return True
-
-    return False
+    return any(protocol["target"] == celestial_body for protocol in communication_protocols)
 
 def has_sufficient_data_transmission_security(celestial_body, data_transmission_security):
     """
@@ -431,11 +423,7 @@ def has_sufficient_data_transmission_security(celestial_body, data_transmission_
     """
 
     # Check if the celestial body has sufficient data transmission security measures
-    for security in data_transmission_security:
-        if security["target"] == celestial_body:
-            return True
-
-    return False
+    return any(security["target"] == celestial_body for security in data_transmission_security)
 
 def has_favorable_simulation_results(celestial_body, simulation_results):
     """
@@ -450,11 +438,7 @@ def has_favorable_simulation_results(celestial_body, simulation_results):
     """
 
     # Check if the celestial body has favorable simulation results for space mining operations
-    for result in simulation_results:
-        if result["target"] == celestial_body and result["success"]:
-            return True
-
-    return False
+    return any(result["target"] == celestial_body and result["success"] for result in simulation_results)
 
 def can_be_integrated_with_pi_network(celestial_body, pi_network_integration):
     """
@@ -469,11 +453,7 @@ def can_be_integrated_with_pi_network(celestial_body, pi_network_integration):
     """
 
     # Check if the celestial body can be integrated with the Pi Network
-    for integration in pi_network_integration:
-        if integration["target"] == celestial_body:
-            return True
-
-    return False
+    return any(integration["target"] == celestial_body for integration in pi_network_integration)
 
 def can_be_reached_by_automated_satellite_deployment(celestial_body, satellite_deployment_automation):
     """
@@ -487,11 +467,7 @@ def can_be_reached_by_automated_satellite_deployment(celestial_body, satellite_d
     """
 
     # Check if the celestial body can be reached by automated satellite deployment
-    for automation in satellite_deployment_automation:
-        if automation["target"] == celestial_body:
-            return True
-
-    return False
+    return any(automation["target"] == celestial_body for automation in satellite_deployment_automation)
 
 def has_favorable_energy_optimization_strategies(celestial_body, energy_optimization):
     """
@@ -506,11 +482,7 @@ def has_favorable_energy_optimization_strategies(celestial_body, energy_optimiza
     """
 
     # Check if the celestial body has favorable energy optimization strategies
-    for optimization in energy_optimization:
-        if optimization["target"] == celestial_body:
-            return True
-
-    return False
+    return any(optimization["target"] == celestial_body for optimization in energy_optimization)
 
 def has_favorable_decentralized_control_mechanisms(celestial_body, decentralized_control):
     """
@@ -525,11 +497,7 @@ def has_favorable_decentralized_control_mechanisms(celestial_body, decentralized
     """
 
     # Check if the celestial body has favorable decentralized control mechanisms
-    for mechanism in decentralized_control:
-        if mechanism["target"] == celestial_body:
-            return True
-
-    return False
+    return any(mechanism["target"] == celestial_body for mechanism in decentralized_control)
 
 def has_favorable_cross_planetary_transaction_details(celestial_body, cross_planetary_transactions):
     """
@@ -544,11 +512,7 @@ def has_favorable_cross_planetary_transaction_details(celestial_body, cross_plan
     """
 
     # Check if the celestial body has favorable cross-planetary transaction details
-    for transaction in cross_planetary_transactions:
-        if transaction["target"] == celestial_body:
-            return True
-
-    return False
+    return any(transaction["target"] == celestial_body for transaction in cross_planetary_transactions)
 
 def has_favorable_resource_survey_results(celestial_body, resource_surveys):
     """
@@ -563,11 +527,7 @@ def has_favorable_resource_survey_results(celestial_body, resource_surveys):
     """
 
     # Check if the celestial body has favorable resource survey results
-    for survey in resource_surveys:
-        if survey["target"] == celestial_body and survey["success"]:
-            return True
-
-    return False
+    return any(survey["target"] == celestial_body and survey["success"] for survey in resource_surveys)
 
 def has_favorable_routing_algorithms(celestial_body, routing_algorithms):
     """
@@ -582,11 +542,7 @@ def has_favorable_routing_algorithms(celestial_body, routing_algorithms):
     """
 
     # Check if the celestial body has favorable routing algorithms for satellite and spacecraft navigation
-    for algorithm in routing_algorithms:
-        if algorithm["target"] == celestial_body:
-            return True
-
-    return False
+    return any(algorithm["target"] == celestial_body for algorithm in routing_algorithms)
 
 def conduct_mining_operation(strategic_location, operation):
     """
