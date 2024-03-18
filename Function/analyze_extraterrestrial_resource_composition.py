@@ -1,3 +1,4 @@
+
 def analyze_extraterrestrial_resource_composition(resource_data):
     """
     Analyzes the composition of extraterrestrial resources to determine their suitability for various applications and inform mining strategies.

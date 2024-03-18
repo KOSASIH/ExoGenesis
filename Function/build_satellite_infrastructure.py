@@ -1,3 +1,4 @@
+
 def build_satellite_infrastructure(satellite_designs, deployment_locations):
     """
     This function designs and deploys satellite-based infrastructure for various purposes.

@@ -1,6 +1,7 @@
 import hashlib
 import hmac
 
+
 def secureInterplanetaryDataTransmission(data, secret_key):
     """
     Secures interplanetary data transmission by implementing security measures to protect data transmitted between different celestial bodies.

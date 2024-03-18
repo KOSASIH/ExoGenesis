@@ -1,3 +1,4 @@
+
 def monitorSpaceResourceAvailability(
     resources_in_space,
     mining_operations,

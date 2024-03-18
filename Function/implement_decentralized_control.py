@@ -1,6 +1,7 @@
 import networkx as nx
 from scipy.optimize import linear_sum_assignment
 
+
 def implement_decentralized_control(infrastructure_graph, control_mechanisms):
     """
     Implement decentralized control mechanisms across the space-based infrastructure.
@@ -27,7 +28,13 @@ def implement_decentralized_control(infrastructure_graph, control_mechanisms):
                 bipartite_graph.add_edge(component, mechanism)
 
     # Solve the assignment problem to find the optimal control mechanism allocation for each component
-    row_ind, col_ind = linear_sum_assignment(nx.adjacency_matrix(bipartite_graph).toarray(), maximize=True)
+    row_ind, col_ind = linear_sum_assignment(
+        nx.adjacency_matrix(bipartite_graph).toarray(), maximize=True
+    )
 
     # Return the optimized control mechanism allocation for each component in the infrastructure
-    return {infrastructure_graph.nodes[i]: control_mechanisms[j] for i, j in zip(row_ind, col_ind) if j != -1}
+    return {
+        infrastructure_graph.nodes[i]: control_mechanisms[j]
+        for i, j in zip(row_ind, col_ind)
+        if j != -1
+    }

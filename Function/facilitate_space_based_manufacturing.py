@@ -297,3 +297,4 @@ def calculate_num_manufacturing_tasks(
     num_manufacturing_tasks = (
         manufacturing_capacity_required / optimized_manufacturing_capacity
     )
+<

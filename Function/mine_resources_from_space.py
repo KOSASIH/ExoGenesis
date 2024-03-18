@@ -1,3 +1,4 @@
+
 def mine_resources_from_space(extraterrestrial_bodies, mining_algorithms):
     """
     This function mines resources from extraterrestrial bodies using advanced mining algorithms.

@@ -1,4 +1,4 @@
-from generative_adversarial_network import GenerativeAdversarialNetwork
+
 from sklearn.model_selection import train_test_split
 from topology_optimization import TopologyOptimization
 
