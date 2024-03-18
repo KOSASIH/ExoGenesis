@@ -1,5 +1,3 @@
-import random
-
 
 def simulateSpaceMiningOperations(
     mining_operations, mining_threshold, simulation_steps

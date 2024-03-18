@@ -192,10 +192,7 @@ def determine_manufacturing_feasibility(resource, availability):
     """
 
     # Determine the manufacturing feasibility based on the availability of the resource
-    if availability > 1000:
-        feasibility = True
-    else:
-        feasibility = False
+    feasibility = availability > 1000
 
     return feasibility
 
@@ -300,6 +297,4 @@ def calculate_num_manufacturing_tasks(
     num_manufacturing_tasks = (
         manufacturing_capacity_required / optimized_manufacturing_capacity
     )
-
-
-return num_manufacturing_tasks
+<

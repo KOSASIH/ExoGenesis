@@ -22,11 +22,6 @@ def buildProject(build_type):
     # Run the appropriate build command based on the build type
     if build_type == "debug":
         # Run the debug build command
-        subprocess.run(["cmake", "..", "-DCMAKE_BUILD_TYPE=Debug"])
-        subprocess.run(["make"])
-    elif build_type == "release":
-        # Run the release build command
-        subprocess.run(["cmake", "..", "-DCMAKE_BUILD_TYPE=Release"])
-        subprocess.run(["make"])
+
     else:
         raise ValueError("Invalid build type. Please use either 'debug' or 'release'.")

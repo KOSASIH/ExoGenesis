@@ -1,7 +1,3 @@
-import os
-
-from opestom_functions import custom_functions
-
 
 def mine_resources_from_space(extraterrestrial_bodies, mining_algorithms):
     """

@@ -1,10 +1,10 @@
-import requests
 import json
 
+import requests
+
+
 def integratePiNetworkWithSpaceInfrastructure(space_infrastructure_data):
-    """
-    Function to integrate the Pi Network with space-based infrastructure.
-    """
+    """Function to integrate the Pi Network with space-based infrastructure."""
     # Define the Pi Network API endpoint
     pi_network_api_endpoint = "https://api.pi.network/v1/integrate"
 
@@ -22,6 +22,5 @@ def integratePiNetworkWithSpaceInfrastructure(space_infrastructure_data):
 
         # Return the response data
         return response_data
-    else:
-        # Return an error message
-        return {"error": "Failed to integrate with the Pi Network."}
+    # Return an error message
+    return {"error": "Failed to integrate with the Pi Network."}

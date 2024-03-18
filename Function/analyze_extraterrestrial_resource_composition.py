@@ -1,5 +1,3 @@
-import numpy as np
-
 
 def analyze_extraterrestrial_resource_composition(resource_data):
     """

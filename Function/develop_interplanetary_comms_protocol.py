@@ -1,7 +1,3 @@
-import os
-
-from opestom_functions import custom_functions
-
 
 def develop_interplanetary_comms_protocol(protocol_designs, communication_partners):
     """

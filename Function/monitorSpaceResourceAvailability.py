@@ -1,5 +1,3 @@
-import numpy as np
-
 
 def monitorSpaceResourceAvailability(
     resources_in_space,
@@ -51,5 +49,4 @@ def monitorSpaceResourceAvailability(
             }
             updated_mining_operations.append(updated_operation)
         return updated_mining_operations
-    else:
-        return mining_operations
+    return mining_operations
