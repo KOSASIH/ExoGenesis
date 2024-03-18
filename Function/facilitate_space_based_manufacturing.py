@@ -1,4 +1,6 @@
-def facilitate_space_based_manufacturing(resource_availability, manufacturing_capacity, transportation_capacity):
+def facilitate_space_based_manufacturing(
+    resource_availability, manufacturing_capacity, transportation_capacity
+):
     """
     Facilitates space-based manufacturing by optimizing resource utilization, manufacturing capacity, and transportation capacity.
 
@@ -12,18 +14,29 @@ def facilitate_space_based_manufacturing(resource_availability, manufacturing_ca
     """
 
     # Analyze resource composition and determine manufacturing feasibility
-    manufacturing_feasibility = analyze_extraterrestrial_resource_composition(resource_availability)
+    manufacturing_feasibility = analyze_extraterrestrial_resource_composition(
+        resource_availability
+    )
 
     # Optimize manufacturing capacity based on resource availability
-    optimized_manufacturing_capacity = optimize_manufacturing_capacity(manufacturing_capacity, resource_availability)
+    optimized_manufacturing_capacity = optimize_manufacturing_capacity(
+        manufacturing_capacity, resource_availability
+    )
 
     # Optimize transportation capacity based on manufacturing capacity and resource availability
-    optimized_transportation_capacity = optimize_transportation_capacity(transportation_capacity, manufacturing_capacity, resource_availability)
+    optimized_transportation_capacity = optimize_transportation_capacity(
+        transportation_capacity, manufacturing_capacity, resource_availability
+    )
 
     # Develop manufacturing plan based on optimized manufacturing and transportation capacities
-    manufacturing_plan = develop_manufacturing_plan(optimized_manufacturing_capacity, optimized_transportation_capacity, resource_availability)
+    manufacturing_plan = develop_manufacturing_plan(
+        optimized_manufacturing_capacity,
+        optimized_transportation_capacity,
+        resource_availability,
+    )
 
     return manufacturing_plan
+
 
 def analyze_extraterrestrial_resource_composition(resource_availability):
     """
@@ -38,10 +51,14 @@ def analyze_extraterrestrial_resource_composition(resource_availability):
 
     manufacturing_feasibility = {}
 
-    for resource, availability in resource_availability.items():# Analyze resource composition and determine manufacturing feasibility
-        manufacturing_feasibility[resource] = determine_manufacturing_feasibility(resource, availability)
+    # Analyze resource composition and determine manufacturing feasibility
+    for resource, availability in resource_availability.items():
+        manufacturing_feasibility[resource] = determine_manufacturing_feasibility(
+            resource, availability
+        )
 
     return manufacturing_feasibility
+
 
 def optimize_manufacturing_capacity(manufacturing_capacity, resource_availability):
     """
@@ -62,14 +79,19 @@ def optimize_manufacturing_capacity(manufacturing_capacity, resource_availabilit
 
     for resource in most_abundant_resources:
         # Calculate the manufacturing capacity required to process the most abundant resources
-        manufacturing_capacity_required = calculate_manufacturing_capacity_required(resource, most_abundant_resources[resource])
+        manufacturing_capacity_required = calculate_manufacturing_capacity_required(
+            resource, most_abundant_resources[resource]
+        )
 
         if manufacturing_capacity_required > optimized_manufacturing_capacity:
             optimized_manufacturing_capacity = manufacturing_capacity_required
 
     return optimized_manufacturing_capacity
 
-def optimize_transportation_capacity(transportation_capacity, manufacturing_capacity, resource_availability):
+
+def optimize_transportation_capacity(
+    transportation_capacity, manufacturing_capacity, resource_availability
+):
     """
     Optimizes transportation capacity based on manufacturing capacity and resource availability.
 
@@ -83,20 +105,29 @@ def optimize_transportation_capacity(transportation_capacity, manufacturing_capa
     """
 
     # Determine the most valuable resources and optimize transportation capacity accordingly
-    most_valuable_resources = determine_most_valuable_resources(resource_availability, manufacturing_capacity)
+    most_valuable_resources = determine_most_valuable_resources(
+        resource_availability, manufacturing_capacity
+    )
 
     optimized_transportation_capacity = transportation_capacity
 
     for resource in most_valuable_resources:
         # Calculate the transportation capacity required to transport the most valuable resources
-        transportation_capacity_required = calculate_transportation_capacity_required(resource, most_valuable_resources[resource])
+        transportation_capacity_required = calculate_transportation_capacity_required(
+            resource, most_valuable_resources[resource]
+        )
 
         if transportation_capacity_required > optimized_transportation_capacity:
             optimized_transportation_capacity = transportation_capacity_required
 
     return optimized_transportation_capacity
 
-def develop_manufacturing_plan(optimized_manufacturing_capacity, optimized_transportation_capacity, resource_availability):
+
+def develop_manufacturing_plan(
+    optimized_manufacturing_capacity,
+    optimized_transportation_capacity,
+    resource_availability,
+):
     """
     Develops a manufacturing plan based on optimized manufacturing and transportation capacities.
 
@@ -112,28 +143,41 @@ def develop_manufacturing_plan(optimized_manufacturing_capacity, optimized_trans
     manufacturing_plan = []
 
     # Determine the most valuable resources and prioritize their manufacturing
-    most_valuable_resources = determine_most_valuable_resources(resource_availability, optimized_manufacturing_capacity)
+    most_valuable_resources = determine_most_valuable_resources(
+        resource_availability, optimized_manufacturing_capacity
+    )
 
     for resource in most_valuable_resources:
         # Calculate the manufacturing capacity required to process the most valuable resources
-        manufacturing_capacity_required = calculate_manufacturing_capacity_required(resource, most_valuable_resources[resource])
+        manufacturing_capacity_required = calculate_manufacturing_capacity_required(
+            resource, most_valuable_resources[resource]
+        )
 
         # Calculate the transportation capacity required to transport the most valuable resources
-        transportation_capacity_required = calculate_transportation_capacity_required(resource, most_valuable_resources[resource])
+        transportation_capacity_required = calculate_transportation_capacity_required(
+            resource, most_valuable_resources[resource]
+        )
 
         # Determine the number of manufacturing tasks required to process the most valuable resources
-        num_manufacturing_tasks = calculate_num_manufacturing_tasks(manufacturing_capacity_required, optimized_manufacturing_capacity)
+        num_manufacturing_tasks = calculate_num_manufacturing_tasks(
+            manufacturing_capacity_required, optimized_manufacturing_capacity
+        )
 
         # Add manufacturing tasks to the manufacturing plan
         for i in range(num_manufacturing_tasks):
-            manufacturing_plan.append({
-                'resource': resource,'quantity': most_valuable_resources[resource] / num_manufacturing_tasks
-            })
+            manufacturing_plan.append(
+                {
+                    "resource": resource,
+                    "quantity": most_valuable_resources[resource]
+                    / num_manufacturing_tasks,
+                }
+            )
 
         # Update the resource availability based on the manufacturing plan
         resource_availability[resource] -= most_valuable_resources[resource]
 
     return manufacturing_plan
+
 
 def determine_manufacturing_feasibility(resource, availability):
     """
@@ -148,12 +192,10 @@ def determine_manufacturing_feasibility(resource, availability):
     """
 
     # Determine the manufacturing feasibility based on the availability of the resource
-    if availability > 1000:
-        feasibility = True
-    else:
-        feasibility = False
+    feasibility = availability > 1000
 
     return feasibility
+
 
 def determine_most_abundant_resources(resource_availability):
     """
@@ -177,6 +219,7 @@ def determine_most_abundant_resources(resource_availability):
 
     return most_abundant_resources
 
+
 def calculate_manufacturing_capacity_required(resource, availability):
     """
     Calculates the manufacturing capacity required to process a resource.
@@ -189,9 +232,10 @@ def calculate_manufacturing_capacity_required(resource, availability):
     manufacturing_capacity_required (int): The manufacturing capacity required to process the resource.
     """
 
-    manufacturing_capacity_required =availability * 0.1
+    manufacturing_capacity_required = availability * 0.1
 
     return manufacturing_capacity_required
+
 
 def determine_most_valuable_resources(resource_availability, manufacturing_capacity):
     """
@@ -218,6 +262,7 @@ def determine_most_valuable_resources(resource_availability, manufacturing_capac
 
     return most_valuable_resources
 
+
 def calculate_transportation_capacity_required(resource, availability):
     """
     Calculates the transportation capacity required to transport a resource.
@@ -234,7 +279,10 @@ def calculate_transportation_capacity_required(resource, availability):
 
     return transportation_capacity_required
 
-def calculate_num_manufacturing_tasks(manufacturing_capacity_required, optimized_manufacturing_capacity):
+
+def calculate_num_manufacturing_tasks(
+    manufacturing_capacity_required, optimized_manufacturing_capacity
+):
     """
     Calculates the number of manufacturing tasks required to process a resource.
 
@@ -246,4 +294,6 @@ def calculate_num_manufacturing_tasks(manufacturing_capacity_required, optimized
     num_manufacturing_tasks (int): The number of manufacturing tasks required to process the resource.
     """
 
-    num_manufacturing_tasks = manufacturing_capacity_required / optimized_manufacturing_capacity
+    num_manufacturing_tasks = (
+        manufacturing_capacity_required / optimized_manufacturing_capacity
+    )
