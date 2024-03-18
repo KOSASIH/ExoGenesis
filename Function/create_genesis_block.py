@@ -47,14 +47,14 @@ def add_block_to_blockchain(blockchain, new_block):
 def integrateBlockchainForResourceTracking(resource_data):
     """
     Integrates blockchain technology for tracking the ownership and transfer of space resources.
-    
+
     Parameters:
     resource_data (list of tuples): A list of tuples containing the resource name, owner, and quantity.
-    
+
     Returns:
     blockchain (list of Blocks): A blockchain containing the ownership and transfer history of the space resources.
     """
-    
+
     # Create the genesis block
     genesis_block = create_genesis_block()
 
