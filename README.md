@@ -8,6 +8,14 @@
 
 Spearheading the integration of extraterrestrial resources with Pi Network, ExoGenesis provides a platform for developing space-based mining algorithms, satellite-based infrastructure, and interplanetary communication protocols, opening new frontiers for decentralized networks.
 
+# Contents 
+
+- [Description](#description)
+- [Vision And Missions](#vision-and-missions)
+- [Technologies](#technologies)
+- [Problems To Solve](#problems-to-solve)
+- [Contributor Guide](#contributor-guide) 
+
 # Description
 
 ExoGenesis pioneers the convergence of extraterrestrial resources with the innovative Pi Network, ushering in a new era of decentralized networking and space exploration. Our comprehensive platform serves as the vanguard for the development of cutting-edge technologies, seamlessly merging space-based mining algorithms, satellite infrastructure, and interplanetary communication protocols.
