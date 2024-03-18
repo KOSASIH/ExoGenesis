@@ -63,13 +63,13 @@ def coordinateSpaceTrafficManagement(satellite_positions, satellite_velocities, 
             maneuver_plans[i] = maneuver * min_safe_distance / np.linalg.norm(maneuver)
             
     # Optimize maneuver plans for efficiency
-    for i in range(len(satellite_positions)):
+    for i, item in enumerate(satellite_positions):
         
         # Calculate the new velocity after applying the maneuver plan
         new_velocity = satellite_velocities[i] + maneuver_plans[i]
         
         # Calculate the new position after applying the maneuver plan
-        new_position = satellite_positions[i] + new_velocity * maneuver_duration
+        new_position = item + new_velocity * maneuver_duration
         
         # Calculate the new velocity after applying the maneuver plan
         new_velocity = new_velocity + np.sign(new_velocity) * max_acceleration * maneuver_duration

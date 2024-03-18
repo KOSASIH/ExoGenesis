@@ -27,9 +27,9 @@ def establishInterplanetaryNavigationSystems(satellite_positions, satellite_velo
     velocity_error = np.zeros(3)
     
     # Correct the position and velocity errors using the satellites' positions and velocities
-    for i in range(len(satellite_positions)):
+    for i, item in enumerate(satellite_positions):
         # Calculate the rotation matrix from the current position and velocity to the target position and velocity
-        rotation_matrix = Rotation.from_rotvec(np.cross(satellite_positions[i], target_position - satellite_positions[i])).as_matrix()
+        rotation_matrix = Rotation.from_rotvec(np.cross(item, target_position - item)).as_matrix()
         
         # Correct the position and velocity errors using the rotation matrix
         position_error = np.dot(rotation_matrix, position_error)
