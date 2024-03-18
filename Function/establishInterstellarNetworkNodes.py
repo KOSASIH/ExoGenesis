@@ -534,7 +534,6 @@ def is_accessible(celestial_body, satellite_infrastructure):
     )
 
 
-
 def has_sufficient_communication_protocols(celestial_body, communication_protocols):
     """
     This function checks if a celestial body has sufficient communication protocols.
@@ -551,7 +550,6 @@ def has_sufficient_communication_protocols(celestial_body, communication_protoco
     return any(
         protocol["target"] == celestial_body for protocol in communication_protocols
     )
-
 
 
 def has_sufficient_data_transmission_security(
@@ -574,7 +572,6 @@ def has_sufficient_data_transmission_security(
     )
 
 
-
 def has_favorable_simulation_results(celestial_body, simulation_results):
     """
     This function checks if a celestial body has favorable simulation results for space mining operations.
@@ -594,7 +591,6 @@ def has_favorable_simulation_results(celestial_body, simulation_results):
     )
 
 
-
 def can_be_integrated_with_pi_network(celestial_body, pi_network_integration):
     """
     This function checks if a celestial body can be integrated with the Pi Network.
@@ -612,7 +608,6 @@ def can_be_integrated_with_pi_network(celestial_body, pi_network_integration):
         integration["target"] == celestial_body
         for integration in pi_network_integration
     )
-
 
 
 def can_be_reached_by_automated_satellite_deployment(
@@ -635,7 +630,6 @@ def can_be_reached_by_automated_satellite_deployment(
     )
 
 
-
 def has_favorable_energy_optimization_strategies(celestial_body, energy_optimization):
     """
     This function checks if a celestial body has favorable energy optimization strategies.
@@ -652,7 +646,6 @@ def has_favorable_energy_optimization_strategies(celestial_body, energy_optimiza
     return any(
         optimization["target"] == celestial_body for optimization in energy_optimization
     )
-
 
 
 def has_favorable_decentralized_control_mechanisms(
@@ -673,7 +666,6 @@ def has_favorable_decentralized_control_mechanisms(
     return any(
         mechanism["target"] == celestial_body for mechanism in decentralized_control
     )
-
 
 
 def has_favorable_cross_planetary_transaction_details(
@@ -697,7 +689,6 @@ def has_favorable_cross_planetary_transaction_details(
     )
 
 
-
 def has_favorable_resource_survey_results(celestial_body, resource_surveys):
     """
     This function checks if a celestial body has favorable resource survey results.
@@ -717,7 +708,6 @@ def has_favorable_resource_survey_results(celestial_body, resource_surveys):
     )
 
 
-
 def has_favorable_routing_algorithms(celestial_body, routing_algorithms):
     """
     This function checks if a celestial body has favorable routing algorithms for satellite and spacecraft navigation.
@@ -734,7 +724,6 @@ def has_favorable_routing_algorithms(celestial_body, routing_algorithms):
     return any(
         algorithm["target"] == celestial_body for algorithm in routing_algorithms
     )
-
 
 
 def conduct_mining_operation(strategic_location, operation):

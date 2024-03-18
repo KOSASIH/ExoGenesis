@@ -21,7 +21,6 @@ def runEndToEndTests():
 
     # Check that the first search result's text matches the expected text
 
-
     # Additional end-to-end tests can be added here
 
     # Close the webdriver
