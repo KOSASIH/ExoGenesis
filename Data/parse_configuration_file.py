@@ -1,10 +1,11 @@
 import configparser
 
+
 def parse_configuration_file(file_path):
     config = configparser.ConfigParser()
 
     # Read the configuration file
-    with open(file_path, 'r') as file:
+    with open(file_path, "r") as file:
         config.read_file(file)
 
     # Extract project settings and parameters

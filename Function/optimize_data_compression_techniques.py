@@ -2,6 +2,7 @@ import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 
+
 def optimize_data_compression_techniques(data, labels):
     """
     Optimize data compression techniques to maximize the amount of information transmitted within available resources.
@@ -15,14 +16,15 @@ def optimize_data_compression_techniques(data, labels):
     """
 
     # Split the data into training and testing sets
-    X_train, X_test, y_train, y_test = train_test_split(data, labels, test_size=0.2, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(
+        data, labels, test_size=0.2, random_state=42
+    )
 
     # Initialize a list to store the performance of each compression technique
     compression_technique_performance = []
 
     # Iterate through different compression techniques
-    for compression_technique in ['gzip', 'lz4', 'zstd']:
-
+    for compression_technique in ["gzip", "lz4", "zstd"]:
         # Compress the data using the current compression technique
         compressed_data = compress_data(X_train, compression_technique)
 

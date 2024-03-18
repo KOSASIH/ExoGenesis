@@ -1,6 +1,9 @@
 import numpy as np
 
-def conduct_space_resource_surveys(infrastructure_graph, celestial_bodies, resource_types):
+
+def conduct_space_resource_surveys(
+    infrastructure_graph, celestial_bodies, resource_types
+):
     """
     Conduct space resource surveys to assess resource abundance, distribution, and accessibility within the space-based infrastructure.
 
@@ -21,11 +24,18 @@ def conduct_space_resource_surveys(infrastructure_graph, celestial_bodies, resou
     for body in celestial_bodies:
         for resource_type in resource_types:
             # Calculate the abundance, distribution, and accessibility of the resource type within the celestial body
-            abundance = np.random.randint(0, 100)  # Placeholder: Replace with actual calculation
-            distribution = np.random.rand(100)  # Placeholder: Replace with actual calculation
-            accessibility = np.random.rand(100)  # Placeholder: Replace with actual calculation
+            # Placeholder: Replace with actual calculation
+            abundance = np.random.randint(0, 100)
+            # Placeholder: Replace with actual calculation
+            distribution = np.random.rand(100)
+            # Placeholder: Replace with actual calculation
+            accessibility = np.random.rand(100)
 
             # Store the survey results for the celestial body and resource type
-            survey_results[body][resource_type] = {"abundance": abundance, "distribution": distribution, "accessibility": accessibility}
+            survey_results[body][resource_type] = {
+                "abundance": abundance,
+                "distribution": distribution,
+                "accessibility": accessibility,
+            }
 
     return survey_results

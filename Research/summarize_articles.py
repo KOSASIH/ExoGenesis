@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
+
 def summarize_articles(query, num_articles=5):
     """
     Summarizes articles and studies relevant to the project's objectives, highlighting key points and implications.
@@ -17,8 +18,8 @@ def summarize_articles(query, num_articles=5):
     search_results = perform_web_search(query, num_articles)
 
     # Extract the article titles and URLs from the search results
-    article_titles = [result['title'] for result in search_results]
-    article_urls = [result['url'] for result in search_results]
+    article_titles = [result["title"] for result in search_results]
+    article_urls = [result["url"] for result in search_results]
 
     # Summarize each article using a web service or library
     summaries = []
@@ -27,6 +28,7 @@ def summarize_articles(query, num_articles=5):
         summaries.append(summary)
 
     return summaries
+
 
 def perform_web_search(query, num_articles):
     """
@@ -47,23 +49,20 @@ def perform_web_search(query, num_articles):
 
     search_url = f"https://www.example.com/search?q={query}"
     response = requests.get(search_url)
-    soup = BeautifulSoup(response.text, 'html.parser')
+    soup = BeautifulSoup(response.text, "html.parser")
 
     # Extract the article titles, URLs, and snippets from the search results
     search_results = []
-    for result in soup.find_all('div', class_='search-result'):
-        title = result.find('a').text
-        url = result.find('a')['href']
-        snippet = result.find('p').text
+    for result in soup.find_all("div", class_="search-result"):
+        title = result.find("a").text
+        url = result.find("a")["href"]
+        snippet = result.find("p").text
 
-        search_results.append({
-            'title': title,
-            'url': url,
-            'snippet': snippet
-        })
+        search_results.append({"title": title, "url": url, "snippet": snippet})
 
     # Return the top num_articles search results
     return search_results[:num_articles]
+
 
 def summarize_article(url):
     """
@@ -82,26 +81,26 @@ def summarize_article(url):
     # Here's an example using the Sumy library to summarize the article:
 
     response = requests.get(url)
-    soup = BeautifulSoup(response.text, 'html.parser')
+    soup = BeautifulSoup(response.text, "html.parser")
 
     # Extract the article text
-    article_text = ''
-    for paragraph in soup.find_all('p'):
+    article_text = ""
+    for paragraph in soup.find_all("p"):
         article_text += paragraph.text
 
     # Summarize the article text
-    from sumy.parsers.html import HtmlParser
     from sumy.nlp.tokenizers import Tokenizer
+    from sumy.parsers.html import HtmlParser
     from sumy.summarizers.lex_rank import LexRankSummarizer
 
     parser = HtmlParser.from_string(article_text)
-    tokenizer = Tokenizer('english')
+    tokenizer = Tokenizer("english")
     summarizer = LexRankSummarizer()
     summary = summarizer(parser.document, tokenizer, 3)
 
     # Return the summary as a string
-    summary_text = ''
+    summary_text = ""
     for sentence in summary:
-        summary_text += str(sentence) + ' '
+        summary_text += str(sentence) + " "
 
     return summary_text

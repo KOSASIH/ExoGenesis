@@ -1,8 +1,10 @@
 import os
+
 import numpy as np
+from keras.utils import to_categorical
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
-from keras.utils import to_categorical
+
 
 def load_dataset(data_dir, batch_size, dim, n_channels, n_classes, shuffle):
     """
@@ -25,7 +27,7 @@ def load_dataset(data_dir, batch_size, dim, n_channels, n_classes, shuffle):
     for folder in os.listdir(data_dir):
         if os.path.isdir(os.path.join(data_dir, folder)):
             for file in os.listdir(os.path.join(data_dir, folder)):
-                if file.endswith('.npy'):
+                if file.endswith(".npy"):
                     data.append(np.load(os.path.join(data_dir, folder, file)))
                     labels.append(folder)
 
@@ -37,10 +39,14 @@ def load_dataset(data_dir, batch_size, dim, n_channels, n_classes, shuffle):
     labels = to_categorical(labels, num_classes=n_classes)
 
     # Split the data into training and testing sets
-    X_train, X_test, y_train, y_test = train_test_split(data, labels, test_size=0.2, random_state=42, shuffle=shuffle)
+    X_train, X_test, y_train, y_test = train_test_split(
+        data, labels, test_size=0.2, random_state=42, shuffle=shuffle
+    )
 
     # Reshape the data to match the expected input shape of themodel
-    X_train = np.reshape(X_train, (X_train.shape[0], dim[0], dim[1], dim[2], n_channels))
+    X_train = np.reshape(
+        X_train, (X_train.shape[0], dim[0], dim[1], dim[2], n_channels)
+    )
     X_test = np.reshape(X_test, (X_test.shape[0], dim[0], dim[1], dim[2], n_channels))
 
     # Normalize the data
@@ -48,13 +54,11 @@ def load_dataset(data_dir, batch_size, dim, n_channels, n_classes, shuffle):
     X_test = X_test / 255.0
 
     # Create a data generator for loading the data in batches
-    datagen = ImageDataGenerator(
-        shear_range=0.2,
-        zoom_range=0.2,
-        horizontal_flip=True
-    )
+    datagen = ImageDataGenerator(shear_range=0.2, zoom_range=0.2, horizontal_flip=True)
 
     # Return the training and testing datasets, and the corresponding labels
-    return (datagen.flow(X_train, y_train, batch_size=batch_size),
-            datagen.flow(X_test, y_test, batch_size=batch_size),
-            le)
+    return (
+        datagen.flow(X_train, y_train, batch_size=batch_size),
+        datagen.flow(X_test, y_test, batch_size=batch_size),
+        le,
+    )
