@@ -1,5 +1,6 @@
 import networkx as nx
 
+
 def facilitate_cross_planetary_transactions(infrastructure_graph, transaction_fees):
     """
     Facilitate cross-planetary transactions between different celestial bodies within the space-based infrastructure.
@@ -25,7 +26,13 @@ def facilitate_cross_planetary_transactions(infrastructure_graph, transaction_fe
                 bipartite_graph.add_edge(link, (body1, body2))
 
     # Solve the assignment problem to find the optimal transaction fee allocation for each communication link
-    row_ind, col_ind = linear_sum_assignment(nx.adjacency_matrix(bipartite_graph).toarray(), maximize=True)
+    row_ind, col_ind = linear_sum_assignment(
+        nx.adjacency_matrix(bipartite_graph).toarray(), maximize=True
+    )
 
     # Return the optimized transaction fee allocation for each communication link in the infrastructure
-    return {infrastructure_graph.edges[i]: transaction_fees[j] for i, j in zip(row_ind, col_ind) if j != -1}
+    return {
+        infrastructure_graph.edges[i]: transaction_fees[j]
+        for i, j in zip(row_ind, col_ind)
+        if j != -1
+    }

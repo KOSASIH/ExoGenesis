@@ -1,6 +1,7 @@
 from uploadcare import Uploadcare
 from uploadcare.transformations import resize_smart
 
+
 def resize_images(api_key, file_id, target_width, target_height):
     """
     Resizes images to optimize file size and dimensions for use in the project.
@@ -19,7 +20,9 @@ def resize_images(api_key, file_id, target_width, target_height):
     file = uploadcare.file(file_id)
 
     # Apply smart resize transformation
-    resized_file = file.transform(resize_smart(width=target_width, height=target_height))
+    resized_file = file.transform(
+        resize_smart(width=target_width, height=target_height)
+    )
 
     # Get resized image URL
     resized_image_url = resized_file.cdn_url

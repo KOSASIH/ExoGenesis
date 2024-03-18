@@ -1,5 +1,6 @@
-import os
 import json
+import os
+
 
 def remove_unused_dependencies(package_json_path):
     """
@@ -9,17 +10,17 @@ def remove_unused_dependencies(package_json_path):
     """
 
     # Load the package.json file
-    with open(package_json_path, 'r') as file:
+    with open(package_json_path, "r") as file:
         package_json = json.load(file)
 
     # Get the list of dependencies
-    dependencies = package_json.get('dependencies', {})
+    dependencies = package_json.get("dependencies", {})
 
     # Get the list of files in the project
     project_files = []
-    for root, dirs, files in os.walk('.'):
+    for root, dirs, files in os.walk("."):
         for file in files:
-            if file.endswith('.js') or file.endswith('.ts'):
+            if file.endswith(".js") or file.endswith(".ts"):
                 project_files.append(os.path.join(root, file))
 
     # Analyze the code to identify unused dependencies
@@ -30,10 +31,10 @@ def remove_unused_dependencies(package_json_path):
 
     # Remove the unused dependencies from the package.json file
     for dependency in unused_dependencies:
-        del package_json['dependencies'][dependency]
+        del package_json["dependencies"][dependency]
 
     # Save the updated package.json file
-    with open(package_json_path, 'w') as file:
+    with open(package_json_path, "w") as file:
         json.dump(package_json, file, indent=2)
 
     print(f"Removed {len(unused_dependencies)} unused dependencies.")

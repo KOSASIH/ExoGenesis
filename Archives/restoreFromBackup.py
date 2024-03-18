@@ -1,6 +1,7 @@
 import os
 import shutil
 
+
 def restoreFromBackup(backup_path, restore_path):
     """
     Restores the project from a previous backup in case of data loss or corruption.
@@ -19,14 +20,16 @@ def restoreFromBackup(backup_path, restore_path):
 
     # Check if the restore path exists
     if os.path.isdir(restore_path):
-        answer = input(f"Warning: Restore path '{restore_path}' already exists. Do you want to overwrite it? (y/n) ")
-        if answer.lower() != 'y':
+        answer = input(
+            f"Warning: Restore path '{restore_path}' already exists. Do you want to overwrite it? (y/n) "
+        )
+        if answer.lower() != "y":
             print("Restoration cancelled.")
             return False
         shutil.rmtree(restore_path)
 
     # Extract the backup to the restore path
-    shutil.unpack_archive(os.path.join(backup_path, 'backup.zip'), restore_path)
+    shutil.unpack_archive(os.path.join(backup_path, "backup.zip"), restore_path)
 
     print("Restoration successful.")
     return True

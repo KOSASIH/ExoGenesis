@@ -1,10 +1,11 @@
+import nltk
 import requests
 from bs4 import BeautifulSoup
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.cluster import KMeans
-import nltk
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
+from sklearn.cluster import KMeans
+from sklearn.feature_extraction.text import TfidfVectorizer
+
 
 def analyze_research_papers(papers):
     """
@@ -23,25 +24,27 @@ def analyze_research_papers(papers):
     findings = []
 
     # Load stopwords and lemmatizer
-    nltk.download('stopwords')
-    nltk.download('wordnet')
-    stop_words = set(stopwords.words('english'))
+    nltk.download("stopwords")
+    nltk.download("wordnet")
+    stop_words = set(stopwords.words("english"))
     lemmatizer = WordNetLemmatizer()
 
     # Iterate through each paper
     for paper in papers:
         # Retrieve paper content
-        if paper.startswith('http'):
+        if paper.startswith("http"):
             response = requests.get(paper)
-            soup = BeautifulSoup(response.text, 'html.parser')
+            soup = BeautifulSoup(response.text, "html.parser")
             content = soup.get_text()
         else:
-            with open(paper, 'r') as file:
+            with open(paper, "r") as file:
                 content = file.read()
 
         # Tokenize and preprocess text
         tokens = nltk.word_tokenize(content)
-        tokens = [lemmatizer.lemmatize(token.lower()) for token in tokens if token.isalpha()]
+        tokens = [
+            lemmatizer.lemmatize(token.lower()) for token in tokens if token.isalpha()
+        ]
         filtered_tokens = [token for token in tokens if token not in stop_words]
 
         # Create TF-IDF vectorizer
@@ -63,8 +66,4 @@ def analyze_research_papers(papers):
                 findings.append(content[tfidf_matrix[:, i].argmax()])
 
     # Return results
-    return {
-        'insights': insights,
-        'trends': trends,
-        'findings': findings
-    }
+    return {"insights": insights, "trends": trends, "findings": findings}

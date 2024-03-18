@@ -1,6 +1,7 @@
 import os
 import shutil
 
+
 def archiveOldVersions(archive_directory, project_directory, version_pattern):
     """
     Archives old versions of the project's codebase, documentation, and assets to declutter the current working directory.
@@ -20,10 +21,8 @@ def archiveOldVersions(archive_directory, project_directory, version_pattern):
 
     # Iterate over the files and directories in the project directory
     for item in os.listdir(project_directory):
-
         # Check if the item matches the version pattern
         if version_pattern in item:
-
             # Create a new directory for the archived version
             archived_version_directory = os.path.join(archive_directory, item)
             os.makedirs(archived_version_directory)

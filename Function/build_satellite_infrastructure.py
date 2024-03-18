@@ -1,5 +1,7 @@
 import os
+
 from opestom_functions import custom_functions
+
 
 def build_satellite_infrastructure(satellite_designs, deployment_locations):
     """
