@@ -19,8 +19,9 @@ def runEndToEndTests():
     first_result = driver.find_element_by_css_selector(".search-results li:first-child")
 
     # Check that the first search result's text matches the expected text
-    assert first_result.text == "Something's interfering with time, Mr. Scarman, " + \
-        "and time is my business."
+    if first_result.text != "Something's interfering with time, Mr. Scarman, " + \
+        "and time is my business.":
+        raise AssertionError
 
     # Additional end-to-end tests can be added here
 
