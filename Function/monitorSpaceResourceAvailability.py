@@ -32,5 +32,4 @@ def monitorSpaceResourceAvailability(resources_in_space, mining_operations, mini
             updated_operation = {'resource_name': operation['resource_name'], 'mining_rate': new_mining_rate, 'mining_efficiency': operation['mining_efficiency']}
             updated_mining_operations.append(updated_operation)
         return updated_mining_operations
-    else:
-        return mining_operations
+    return mining_operations

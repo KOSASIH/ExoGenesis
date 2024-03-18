@@ -22,6 +22,5 @@ def integratePiNetworkWithSpaceInfrastructure(space_infrastructure_data):
 
         # Return the response data
         return response_data
-    else:
-        # Return an error message
-        return {"error": "Failed to integrate with the Pi Network."}
+    # Return an error message
+    return {"error": "Failed to integrate with the Pi Network."}
