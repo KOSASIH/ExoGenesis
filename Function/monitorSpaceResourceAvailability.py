@@ -1,5 +1,10 @@
-
-def monitorSpaceResourceAvailability(resources_in_space, mining_operations, mining_efficiency, mining_rate, mining_threshold):
+def monitorSpaceResourceAvailability(
+    resources_in_space,
+    mining_operations,
+    mining_efficiency,
+    mining_rate,
+    mining_threshold,
+):
     """
     Monitors the availability of resources in space and adjusts mining operations accordingly to prevent overexploitation.
 
@@ -15,21 +20,32 @@ def monitorSpaceResourceAvailability(resources_in_space, mining_operations, mini
     """
 
     # Calculate the total amount of resources available in space
-    total_resources = sum([resource['amount'] for resource in resources_in_space])
+    total_resources = sum([resource["amount"] for resource in resources_in_space])
 
     # Calculate the total mining rate
-    total_mining_rate = sum([operation['mining_rate'] * operation['mining_efficiency'] for operation in mining_operations])
+    total_mining_rate = sum(
+        [
+            operation["mining_rate"] * operation["mining_efficiency"]
+            for operation in mining_operations
+        ]
+    )
 
     # Calculate the ratio of resources available to mining rate
     resources_to_mining_rate_ratio = total_resources / total_mining_rate
 
     # If the ratio of resources available to mining rate is below the threshold, adjust the mining operations
     if resources_to_mining_rate_ratio < mining_threshold:
-        updated_mining_operations= []
+        updated_mining_operations = []
         for operation in mining_operations:
             # Calculate the new mining rate based on the current mining rate and the resources available
-            new_mining_rate = mining_rate * (resources_to_mining_rate_ratio / mining_threshold)
-            updated_operation = {'resource_name': operation['resource_name'], 'mining_rate': new_mining_rate, 'mining_efficiency': operation['mining_efficiency']}
+            new_mining_rate = mining_rate * (
+                resources_to_mining_rate_ratio / mining_threshold
+            )
+            updated_operation = {
+                "resource_name": operation["resource_name"],
+                "mining_rate": new_mining_rate,
+                "mining_efficiency": operation["mining_efficiency"],
+            }
             updated_mining_operations.append(updated_operation)
         return updated_mining_operations
     else:

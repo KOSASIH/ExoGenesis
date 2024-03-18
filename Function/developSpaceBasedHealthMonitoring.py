@@ -1,6 +1,7 @@
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
+from sklearn.model_selection import train_test_split
+
 
 def developSpaceBasedHealthMonitoring(data, labels):
     """
@@ -15,7 +16,9 @@ def developSpaceBasedHealthMonitoring(data, labels):
     """
 
     # Split the data into training and testing sets
-    X_train, X_test, y_train, y_test = train_test_split(data, labels, test_size=0.2, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(
+        data, labels, test_size=0.2, random_state=42
+    )
 
     # Create a Random Forest Classifier model
     model = RandomForestClassifier(n_estimators=100, random_state=42)

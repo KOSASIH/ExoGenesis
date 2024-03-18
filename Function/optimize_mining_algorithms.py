@@ -1,7 +1,10 @@
-from sklearn.model_selection import GridSearchCV
 from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import GridSearchCV
 
-def optimize_mining_algorithms(X, y, algorithm=RandomForestRegressor(), param_grid=None):
+
+def optimize_mining_algorithms(
+    X, y, algorithm=RandomForestRegressor(), param_grid=None
+):
     """
     Function to optimize mining algorithms using GridSearchCV.
 
@@ -20,7 +23,9 @@ def optimize_mining_algorithms(X, y, algorithm=RandomForestRegressor(), param_gr
         raise ValueError("Parameter grid is required for optimization")
 
     # Initialize GridSearchCV
-    grid_search = GridSearchCV(estimator=algorithm, param_grid=param_grid, cv=5, n_jobs=-1)
+    grid_search = GridSearchCV(
+        estimator=algorithm, param_grid=param_grid, cv=5, n_jobs=-1
+    )
 
     # Fit GridSearchCV to data
     grid_search.fit(X, y)

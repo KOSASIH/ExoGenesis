@@ -1,6 +1,7 @@
 import socket
 import threading
 
+
 class InterplanetaryCommunicationProtocol:
     def __init__(self, ip, port):
         self.ip = ip
@@ -26,7 +27,7 @@ class InterplanetaryCommunicationProtocol:
                 client.close()
                 nickname = self.nicknames[index]
                 self.nicknames.remove(nickname)
-                self.broadcast(f"{nickname} left the chat!".encode('utf-8'))
+                self.broadcast(f"{nickname} left the chat!".encode("utf-8"))
                 break
 
     def receive(self):
@@ -34,14 +35,14 @@ class InterplanetaryCommunicationProtocol:
             client, address = self.server.accept()
             print(f"Connected with {str(address)}")
 
-            client.send('NICK'.encode('utf-8'))
-            nickname = client.recv(1024).decode('utf-8')
+            client.send("NICK".encode("utf-8"))
+            nickname = client.recv(1024).decode("utf-8")
             self.nicknames.append(nickname)
             self.clients.append(client)
 
             print(f"Nickname of client is {nickname}!")
-            self.broadcast(f"{nickname} joined the chat!".encode('utf-8'))
-            client.send('Connected to the server!'.encode('utf-8'))
+            self.broadcast(f"{nickname} joined the chat!".encode("utf-8"))
+            client.send("Connected to the server!".encode("utf-8"))
 
             thread = threading.Thread(target=self.handle, args=(client,))
             thread.start()
@@ -49,6 +50,7 @@ class InterplanetaryCommunicationProtocol:
     def implementCommunicationProtocol(self):
         receive_thread = threading.Thread(target=self.receive)
         receive_thread.start()
+
 
 if __name__ == "__main__":
     protocol = InterplanetaryCommunicationProtocol("127.0.0.1", 55555)
