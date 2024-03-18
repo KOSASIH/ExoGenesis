@@ -148,10 +148,7 @@ def determine_manufacturing_feasibility(resource, availability):
     """
 
     # Determine the manufacturing feasibility based on the availability of the resource
-    if availability > 1000:
-        feasibility = True
-    else:
-        feasibility = False
+    feasibility = availability > 1000
 
     return feasibility
 
