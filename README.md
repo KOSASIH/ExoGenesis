@@ -1,13 +1,14 @@
 [![CI](https://github.com/KOSASIH/ExoGenesis/actions/workflows/blank.yml/badge.svg)](https://github.com/KOSASIH/ExoGenesis/actions/workflows/blank.yml)
 [![StackHawk](https://github.com/KOSASIH/ExoGenesis/actions/workflows/stackhawk.yml/badge.svg)](https://github.com/KOSASIH/ExoGenesis/actions/workflows/stackhawk.yml)
 [![DeepSource](https://app.deepsource.com/gh/KOSASIH/ExoGenesis.svg/?label=active+issues&show_trend=true&token=Nz0iNEMDMjJ0QaSMRW4b257A)](https://app.deepsource.com/gh/KOSASIH/ExoGenesis/)
+
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/KOSASIH/ExoGenesis">ExoGenesis</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkedin.com/in/kosasih-81b46b5a">KOSASIH</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
 
 # ExoGenesis
 
 Spearheading the integration of extraterrestrial resources with Pi Network, ExoGenesis provides a platform for developing space-based mining algorithms, satellite-based infrastructure, and interplanetary communication protocols, opening new frontiers for decentralized networks.
 
-# Description 
+# Description
 
 ExoGenesis pioneers the convergence of extraterrestrial resources with the innovative Pi Network, ushering in a new era of decentralized networking and space exploration. Our comprehensive platform serves as the vanguard for the development of cutting-edge technologies, seamlessly merging space-based mining algorithms, satellite infrastructure, and interplanetary communication protocols.
 
@@ -19,7 +20,7 @@ Furthermore, ExoGenesis pioneers the development of interplanetary communication
 
 By integrating extraterrestrial resources with the Pi Network, ExoGenesis opens new frontiers for decentralized networks, fostering innovation, collaboration, and exploration on a cosmic scale. Together, we embark on a journey to redefine the boundaries of human ingenuity, propelling civilization towards a future where the resources of the cosmos are within reach of all. Join us in shaping the destiny of humanity among the stars with ExoGenesis.
 
-# Vision And Missions 
+# Vision And Missions
 
 **Vision:**
 
@@ -57,7 +58,7 @@ To pioneer the sustainable integration of extraterrestrial resources with decent
 
 15. **Address Global Challenges Through Space Solutions:** Harness the power of space technology and innovation to address pressing global challenges, including climate change, natural disasters, resource scarcity, and sustainable development, leveraging space-based assets and data for the benefit of humanity and the planet.
 
-# Technologies 
+# Technologies
 
 ExoGenesis Technologies encompasses a diverse array of cutting-edge innovations aimed at unlocking the potential of space resources and decentralized networks. Here are some of our key technological pillars:
 
@@ -79,7 +80,7 @@ ExoGenesis Technologies encompasses a diverse array of cutting-edge innovations 
 
 These technologies represent just a glimpse of the innovative solutions being developed by ExoGenesis to unlock the vast potential of space resources and decentralized networks, paving the way for a future where humanity thrives among the stars.
 
-# Problems To Solve 
+# Problems To Solve
 
 1. **Resource Scarcity on Earth:** With finite resources and growing global demand, addressing issues of resource scarcity and depletion is crucial. Space-based mining and resource utilization offer a sustainable solution by tapping into extraterrestrial resources, reducing reliance on Earth's limited reserves.
 
