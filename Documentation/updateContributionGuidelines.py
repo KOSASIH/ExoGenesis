@@ -1,4 +1,3 @@
-import os
 import re
 
 def updateContributionGuidelines(guidelines_path, new_guidelines_content):
