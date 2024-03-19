@@ -1,6 +1,5 @@
 import openrewrite
 import openrewrite.java
-import openrewrite.java.tree
 
 
 def fix_code(code: str) -> str:
