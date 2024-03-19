@@ -1,6 +1,7 @@
 import hashlib
 import time
 
+
 class Node:
     def __init__(self, id, data):
         self.id = id
@@ -11,7 +12,9 @@ class Node:
 
     def calculate_hash(self):
         sha = hashlib.sha256()
-        sha.update(f"{self.id}{self.data}{self.timestamp}{self.previous_hash}".encode('utf-8'))
+        sha.update(
+            f"{self.id}{self.data}{self.timestamp}{self.previous_hash}".encode("utf-8")
+        )
         return sha.hexdigest()
 
     def __repr__(self):
