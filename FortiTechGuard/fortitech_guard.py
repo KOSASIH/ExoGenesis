@@ -31,6 +31,5 @@ def fortitech_guard(exo_genesis_system, threat_data):
 
         # Return the protection status message
         return response_json["message"]
-    else:
-        # Return an error message if the request was not successful
-        return f"Error: {response.status_code} - {response.text}"
+    # Return an error message if the request was not successful
+    return f"Error: {response.status_code} - {response.text}"
