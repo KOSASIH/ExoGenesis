@@ -1,3 +1,4 @@
+[![Mark stale issues and pull requests](https://github.com/KOSASIH/ExoGenesis/actions/workflows/stale.yml/badge.svg)](https://github.com/KOSASIH/ExoGenesis/actions/workflows/stale.yml)
 [![CI](https://github.com/KOSASIH/ExoGenesis/actions/workflows/blank.yml/badge.svg)](https://github.com/KOSASIH/ExoGenesis/actions/workflows/blank.yml)
 [![StackHawk](https://github.com/KOSASIH/ExoGenesis/actions/workflows/stackhawk.yml/badge.svg)](https://github.com/KOSASIH/ExoGenesis/actions/workflows/stackhawk.yml)
 [![DeepSource](https://app.deepsource.com/gh/KOSASIH/ExoGenesis.svg/?label=active+issues&show_trend=true&token=Nz0iNEMDMjJ0QaSMRW4b257A)](https://app.deepsource.com/gh/KOSASIH/ExoGenesis/)
