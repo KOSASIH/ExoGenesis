@@ -1,3 +1,4 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/kosasih/exogenesis/badge)](https://www.codefactor.io/repository/github/kosasih/exogenesis)
 [![Deploy Jekyll with GitHub Pages dependencies preinstalled](https://github.com/KOSASIH/ExoGenesis/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/KOSASIH/ExoGenesis/actions/workflows/jekyll-gh-pages.yml)
 [![Greetings](https://github.com/KOSASIH/ExoGenesis/actions/workflows/greetings.yml/badge.svg)](https://github.com/KOSASIH/ExoGenesis/actions/workflows/greetings.yml)
 [![Mark stale issues and pull requests](https://github.com/KOSASIH/ExoGenesis/actions/workflows/stale.yml/badge.svg)](https://github.com/KOSASIH/ExoGenesis/actions/workflows/stale.yml)
