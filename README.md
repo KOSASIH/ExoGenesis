@@ -1,3 +1,4 @@
+[![Deploy Jekyll with GitHub Pages dependencies preinstalled](https://github.com/KOSASIH/ExoGenesis/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/KOSASIH/ExoGenesis/actions/workflows/jekyll-gh-pages.yml)
 [![Greetings](https://github.com/KOSASIH/ExoGenesis/actions/workflows/greetings.yml/badge.svg)](https://github.com/KOSASIH/ExoGenesis/actions/workflows/greetings.yml)
 [![Mark stale issues and pull requests](https://github.com/KOSASIH/ExoGenesis/actions/workflows/stale.yml/badge.svg)](https://github.com/KOSASIH/ExoGenesis/actions/workflows/stale.yml)
 [![CI](https://github.com/KOSASIH/ExoGenesis/actions/workflows/blank.yml/badge.svg)](https://github.com/KOSASIH/ExoGenesis/actions/workflows/blank.yml)
