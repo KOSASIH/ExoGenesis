@@ -28,6 +28,7 @@ class LifeSupportSystem:
         self.produce_waste(waste_rate)
         self.check_supply_levels()
 
+
 # Example usage:
 lss = LifeSupportSystem(1000, 500, 100, 0)
 lss.update_supply_levels(10, 5, 2, 1)
