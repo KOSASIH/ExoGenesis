@@ -1,6 +1,7 @@
 import torch
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
+
 class CodeShieldAI:
     def __init__(self, model_name, tokenizer_name):
         self.model = AutoModelForSequenceClassification.from_pretrained(model_name)
@@ -12,6 +13,7 @@ class CodeShieldAI:
         logits = outputs.logits
         probabilities = torch.softmax(logits, dim=-1)
         return probabilities.argmax().item()
+
 
 # Example usage
 code_shield_ai = CodeShieldAI("microsoft/codebert-base", "microsoft/codebert-base")
