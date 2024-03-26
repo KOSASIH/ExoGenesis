@@ -1,5 +1,5 @@
 ![Static Badge](https://img.shields.io/badge/Pi_Network-violet)
-![Static Badge](https://img.shields.io/badge/High-Tech-green)
+![Static Badge](https://img.shields.io/badge/High-Tech-white)
 [![CodeFactor](https://www.codefactor.io/repository/github/kosasih/exogenesis/badge)](https://www.codefactor.io/repository/github/kosasih/exogenesis)
 [![Deploy Jekyll with GitHub Pages dependencies preinstalled](https://github.com/KOSASIH/ExoGenesis/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/KOSASIH/ExoGenesis/actions/workflows/jekyll-gh-pages.yml)
 [![Greetings](https://github.com/KOSASIH/ExoGenesis/actions/workflows/greetings.yml/badge.svg)](https://github.com/KOSASIH/ExoGenesis/actions/workflows/greetings.yml)
