@@ -1,5 +1,6 @@
 import requests
 
+
 class AstroMesh:
     def __init__(self, network="testnet"):
         self.network = network
@@ -21,9 +22,14 @@ class AstroMesh:
         response = requests.post(url, json=transaction, headers=headers)
         return response.json()
 
+
 # Example usage
 astro_mesh = AstroMesh()
-account_info = astro_mesh.get_account_info("GABC7KQ2W526B7562J23YV762BX53TQZ3T3S6K3K4XB52XM7")
-payment_history = astro_mesh.get_payment_history("GABC7KQ2W526B7562J23YV762BX53TQZ3T3S6K3K4XB52XM7")
+account_info = astro_mesh.get_account_info(
+    "GABC7KQ2W526B7562J23YV762BX53TQZ3T3S6K3K4XB52XM7"
+)
+payment_history = astro_mesh.get_payment_history(
+    "GABC7KQ2W526B7562J23YV762BX53TQZ3T3S6K3K4XB52XM7"
+)
 transaction = {...}  # create a transaction object
 submitted_transaction = astro_mesh.submit_transaction(transaction)
