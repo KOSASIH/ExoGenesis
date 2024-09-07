@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo Genesis: About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-image: url('https://placehold.co/1200x800');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="font-sans leading-normal tracking-normal">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-black bg-opacity-50 p-4 fixed w-full z-10 top-0">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="text-2xl font-bold">Exo Genesis</div>
+            <div>
+                <a href="#about" class="text-white px-4">About</a>
+                <a href="#services" class="text-white px-4">Services</a>
+                <a href="#contact" class="text-white px-4">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex items-center justify-center">
+        <div class="text-center glass p-8 rounded-lg">
+            <h1 class="text-5xl font-bold mb-4">Exo Genesis</h1>
+            <p class="text-xl">Spearheading the integration of extraterrestrial resources with Pi Network.</p>
+            <a href="#about" class="mt-8 inline-block bg-blue-500 text-white px-6 py-3 rounded-full">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-black bg-opacity-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">About Us</h2>
+            <p class="text-lg max-w-3xl mx-auto">
+                ExoGenesis provides a platform for developing space-based mining algorithms, satellite-based infrastructure, and interplanetary communication protocols, opening new frontiers for decentralized networks.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass p-8 rounded-lg">
+                    <i class="fas fa-satellite-dish text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Satellite Infrastructure</h3>
+                    <p>Developing advanced satellite-based infrastructure for seamless interplanetary communication.</p>
+                </div>
+                <div class="glass p-8 rounded-lg">
+                    <i class="fas fa-robot text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Mining Algorithms</h3>
+                    <p>Creating innovative space-based mining algorithms to harness extraterrestrial resources.</p>
+                </div>
+                <div class="glass p-8 rounded-lg">
+                    <i class="fas fa-network-wired text-4xl mb-4"></i>
+                    <h3 class="text-2xl font-bold mb-2">Decentralized Networks</h3>
+                    <p>Opening new frontiers for decentralized networks through interplanetary communication protocols.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-black bg-opacity-50">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Contact Us</h2>
+            <form class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <input type="text" placeholder="Name" class="w-full p-3 rounded-lg glass">
+                </div>
+                <div class="mb-4">
+                    <input type="email" placeholder="Email" class="w-full p-3 rounded-lg glass">
+                </div>
+                <div class="mb-4">
+                    <textarea placeholder="Message" class="w-full p-3 rounded-lg glass"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-full">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-black bg-opacity-50 text-center">
+        <p>&copy; 2024 Exo Genesis. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
