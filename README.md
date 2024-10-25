@@ -7,7 +7,7 @@
 [![StackHawk](https://github.com/KOSASIH/ExoGenesis/actions/workflows/stackhawk.yml/badge.svg)](https://github.com/KOSASIH/ExoGenesis/actions/workflows/stackhawk.yml)
 [![DeepSource](https://app.deepsource.com/gh/KOSASIH/ExoGenesis.svg/?label=active+issues&show_trend=true&token=Nz0iNEMDMjJ0QaSMRW4b257A)](https://app.deepsource.com/gh/KOSASIH/ExoGenesis/)
 
-# Additional International Space Organizations Certification Code Badges
+# Additional International Space Organizations Certification Badges
 
 ## NASA (National Aeronautics and Space Administration)
 [![NASA Voyager](https://img.shields.io/badge/NASA-Voyager-orange)](https://voyager.jpl.nasa.gov/)  
