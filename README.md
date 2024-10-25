@@ -244,3 +244,65 @@ Thank you for your interest in contributing to ExoGenesis! We welcome individual
 10. **Celebrate Achievements and Milestones:** Celebrate the achievements, milestones, and contributions of our community members. Recognize and appreciate the efforts of individuals who have made significant contributions to our projects and initiatives.
 
 By following this contributor guide, you can make meaningful contributions to ExoGenesis and help us realize our vision of advancing space exploration, resource utilization, and decentralized networks for the benefit of humanity and the cosmos. We look forward to welcoming you to our community and working together towards a shared future among the stars.
+
+# Technology Companies Partnership Badges
+
+## Microsoft
+[![Microsoft Partner](https://img.shields.io/badge/Microsoft-Partner-blue)](https://partner.microsoft.com/)  
+[Microsoft Partner](https://partner.microsoft.com/) - A partnership program for businesses to collaborate with Microsoft.
+
+## Google Cloud
+[![Google Cloud Partner](https://img.shields.io/badge/Google%20Cloud-Partner-orange)](https://cloud.google.com/partners)  
+[Google Cloud Partner](https://cloud.google.com/partners) - A program for companies to partner with Google Cloud.
+
+## Amazon Web Services (AWS)
+[![AWS Partner](https://img.shields.io/badge/AWS-Partner-red)](https://aws.amazon.com/partners/)  
+[AWS Partner](https://aws.amazon.com/partners/) - A global partner network for AWS services.
+
+## IBM
+[![IBM Partner](https://img.shields.io/badge/IBM-Partner-purple)](https://www.ibm.com/partnerworld)  
+[IBM Partner](https://www.ibm.com/partnerworld) - A program for businesses to collaborate with IBM.
+
+## Oracle
+[![Oracle Partner](https://img.shields.io/badge/Oracle-Partner-green)](https://www.oracle.com/partners/)  
+[Oracle Partner](https://www.oracle.com/partners/) - A partnership program for Oracle technologies.
+
+## Salesforce
+[![Salesforce Partner](https://img.shields.io/badge/Salesforce-Partner-lightblue)](https://partners.salesforce.com/)  
+[Salesforce Partner](https://partners.salesforce.com/) - A program for companies to partner with Salesforce.
+
+## Cisco
+[![Cisco Partner](https://img.shields.io/badge/Cisco-Partner-blue)](https://www.cisco.com/c/en/us/partners.html)  
+[Cisco Partner](https://www.cisco.com/c/en/us/partners.html) - A partnership program for networking and security solutions.
+
+## Adobe
+[![Adobe Partner](https://img.shields.io/badge/Adobe-Partner-red)](https://business.adobe.com/partners.html)  
+[Adobe Partner](https://business.adobe.com/partners.html) - A program for businesses to collaborate with Adobe.
+
+## VMware
+[![VMware Partner](https://img.shields.io/badge/VMware-Partner-orange)](https://www.vmware.com/partners.html)  
+[VMware Partner](https://www.vmware.com/partners.html) - A partnership program for virtualization and cloud solutions.
+
+## SAP
+[![SAP Partner](https://img.shields.io/badge/SAP-Partner-green)](https://partner.sap.com/)  
+[SAP Partner](https://partner.sap.com/) - A program for companies to partner with SAP technologies.
+
+## Intel
+[![Intel Partner](https://img.shields.io/badge/Intel-Partner-lightgrey)](https://www.intel.com/content/www/us/en/partner/overview.html)  
+[Intel Partner](https://www.intel.com/content/www/us/en/partner/overview.html) - A partnership program for technology solutions.
+
+## Dell Technologies
+[![Dell Technologies Partner](https://img.shields.io/badge/Dell%20Technologies-Partner-blue)](https://www.dell.com/partner)  
+[Dell Technologies Partner](https://www.dell.com/partner) - A program for businesses to collaborate with Dell Technologies.
+
+## NVIDIA
+[![NVIDIA Partner](https://img.shields.io/badge/NVIDIA-Partner-green)](https://www.nvidia.com/en-us/deep-learning-ai/partners/)  
+[NVIDIA Partner](https://www.nvidia.com/en-us/deep-learning-ai/partners/) - A partnership program for AI and GPU technologies.
+
+## Slack
+[![Slack Partner](https://img.shields.io/badge/Slack-Partner-lightblue)](https://slack.com/partners)  
+[Slack Partner](https://slack.com/partners) - A program for companies to partner with Slack.
+
+## HubSpot
+[![HubSpot Partner](https://img.shields.io/badge/HubSpot-Partner-orange)](https://www.hubspot.com/partners)  
+[HubSpot Partner](https://www.hubspot.com/partners) - A partnership program for inbound marketing solutions.
