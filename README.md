@@ -7,6 +7,47 @@
 [![StackHawk](https://github.com/KOSASIH/ExoGenesis/actions/workflows/stackhawk.yml/badge.svg)](https://github.com/KOSASIH/ExoGenesis/actions/workflows/stackhawk.yml)
 [![DeepSource](https://app.deepsource.com/gh/KOSASIH/ExoGenesis.svg/?label=active+issues&show_trend=true&token=Nz0iNEMDMjJ0QaSMRW4b257A)](https://app.deepsource.com/gh/KOSASIH/ExoGenesis/)
 
+# International Space Organizations Certification Code Badges
+
+## NASA (National Aeronautics and Space Administration)
+[![NASA Artemis](https://img.shields.io/badge/NASA-Artemis-orange)](https://www.nasa.gov/specials/artemis/)  
+[NASA Artemis](https://www.nasa.gov/specials/artemis/) - A program to return humans to the Moon.
+
+## ESA (European Space Agency)
+[![ESA Mars Express](https://img.shields.io/badge/ESA-Mars%20Express-blue)](https://www.esa.int/Science_Exploration/Space_Science/Mars_Express)  
+[ESA Mars Express](https://www.esa.int/Science_Exploration/Space_Science/Mars_Express) - A mission to explore Mars.
+
+## ISRO (Indian Space Research Organisation)
+[![ISRO Mangalyaan](https://img.shields.io/badge/ISRO-Mangalyaan-red)](https://www.isro.gov.in/spacecraft/mangalyaan)  
+[ISRO Mangalyaan](https://www.isro.gov.in/spacecraft/mangalyaan) - India's first interplanetary mission to Mars.
+
+## JAXA (Japan Aerospace Exploration Agency)
+[![JAXA Hayabusa2](https://img.shields.io/badge/JAXA-Hayabusa2-green)](https://www.jaxa.jp/projects/rockets/hayabusa2/index_e.html)  
+[JAXA Hayabusa2](https://www.jaxa.jp/projects/rockets/hayabusa2/index_e.html) - A mission to collect samples from an asteroid.
+
+## CNSA (China National Space Administration)
+[![CNSA Tianwen-1](https://img.shields.io/badge/CNSA-Tianwen%201-yellow)](http://www.cnsa.gov.cn)  
+[CNSA Tianwen-1](http://www.cnsa.gov.cn) - China's first mission to Mars.
+
+## Roscosmos (Russian Federal Space Agency)
+[![Roscosmos Soyuz](https://img.shields.io/badge/Roscosmos-Soyuz-purple)](https://www.roscosmos.ru)  
+[Roscosmos Soyuz](https://www.roscosmos.ru) - A series of spacecraft for human spaceflight.
+
+## SpaceX
+[![SpaceX Crew Dragon](https://img.shields.io/badge/SpaceX-Crew%20Dragon-lightblue)](https://www.spacex.com/launches/)  
+[SpaceX Crew Dragon](https://www.spacex.com/launches/) - A spacecraft designed to carry astronauts to the ISS.
+
+## Blue Origin
+[![Blue Origin New Shepard](https://img.shields.io/badge/Blue%20Origin-New%20Shepard-orange)](https://www.blueorigin.com/)  
+[Blue Origin New Shepard](https://www.blueorigin.com/) - A suborbital spaceflight system for research and tourism.
+
+## International Space Station (ISS)
+[![ISS Expedition](https://img.shields.io/badge/ISS-Expedition-lightgrey)](https://www.nasa.gov/mission_pages/station/expeditions/index.html)  
+[International Space Station](https://www.nasa.gov/mission_pages/station/expeditions/index.html) - A habitable space station for international collaboration.
+
+## UNOOSA (United Nations Office for Outer Space Affairs)
+[![UNOOSA](https://img.shields.io/badge/UNOOSA-Office%20for%20Outer%20Space%20Affairs-blue)](https://www.unoosa.org)  
+[UNOOSA](https://www.unoosa.org) - Promotes international cooperation in the peaceful use of outer space.
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/KOSASIH/ExoGenesis">ExoGenesis</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkedin.com/in/kosasih-81b46b5a">KOSASIH</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
 
