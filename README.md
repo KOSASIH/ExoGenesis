@@ -7,47 +7,87 @@
 [![StackHawk](https://github.com/KOSASIH/ExoGenesis/actions/workflows/stackhawk.yml/badge.svg)](https://github.com/KOSASIH/ExoGenesis/actions/workflows/stackhawk.yml)
 [![DeepSource](https://app.deepsource.com/gh/KOSASIH/ExoGenesis.svg/?label=active+issues&show_trend=true&token=Nz0iNEMDMjJ0QaSMRW4b257A)](https://app.deepsource.com/gh/KOSASIH/ExoGenesis/)
 
-# International Space Organizations Certification Code Badges
+# Additional International Space Organizations Certification Code Badges
 
 ## NASA (National Aeronautics and Space Administration)
-[![NASA Artemis](https://img.shields.io/badge/NASA-Artemis-orange)](https://www.nasa.gov/specials/artemis/)  
-[NASA Artemis](https://www.nasa.gov/specials/artemis/) - A program to return humans to the Moon.
+[![NASA Voyager](https://img.shields.io/badge/NASA-Voyager-orange)](https://voyager.jpl.nasa.gov/)  
+[NASA Voyager](https://voyager.jpl.nasa.gov/) - A mission to explore the outer planets and beyond.
 
 ## ESA (European Space Agency)
-[![ESA Mars Express](https://img.shields.io/badge/ESA-Mars%20Express-blue)](https://www.esa.int/Science_Exploration/Space_Science/Mars_Express)  
-[ESA Mars Express](https://www.esa.int/Science_Exploration/Space_Science/Mars_Express) - A mission to explore Mars.
+[![ESA Rosetta](https://img.shields.io/badge/ESA-Rosetta-blue)](https://www.esa.int/Science_Exploration/Space_Science/Rosetta)  
+[ESA Rosetta](https://www.esa.int/Science_Exploration/Space_Science/Rosetta) - A mission to study comet 67P/Churyumov–Gerasimenko.
 
 ## ISRO (Indian Space Research Organisation)
-[![ISRO Mangalyaan](https://img.shields.io/badge/ISRO-Mangalyaan-red)](https://www.isro.gov.in/spacecraft/mangalyaan)  
-[ISRO Mangalyaan](https://www.isro.gov.in/spacecraft/mangalyaan) - India's first interplanetary mission to Mars.
+[![ISRO Chandrayaan-2](https://img.shields.io/badge/ISRO-Chandrayaan%202-red)](https://www.isro.gov.in/spacecraft/chandrayaan-2)  
+[ISRO Chandrayaan-2](https://www.isro.gov.in/spacecraft/chandrayaan-2) - A mission to explore the Moon's south pole.
 
 ## JAXA (Japan Aerospace Exploration Agency)
-[![JAXA Hayabusa2](https://img.shields.io/badge/JAXA-Hayabusa2-green)](https://www.jaxa.jp/projects/rockets/hayabusa2/index_e.html)  
-[JAXA Hayabusa2](https://www.jaxa.jp/projects/rockets/hayabusa2/index_e.html) - A mission to collect samples from an asteroid.
+[![JAXA Kibo](https://img.shields.io/badge/JAXA-Kibo-green)](https://iss.jaxa.jp/en/kibo/)  
+[JAXA Kibo](https://iss.jaxa.jp/en/kibo/) - The Japanese Experiment Module on the ISS.
 
 ## CNSA (China National Space Administration)
-[![CNSA Tianwen-1](https://img.shields.io/badge/CNSA-Tianwen%201-yellow)](http://www.cnsa.gov.cn)  
-[CNSA Tianwen-1](http://www.cnsa.gov.cn) - China's first mission to Mars.
+[![CNSA Chang'e 4](https://img.shields.io/badge/CNSA-Chang%27e%204-yellow)](http://www.cnsa.gov.cn)  
+[CNSA Chang'e 4](http://www.cnsa.gov.cn) - The first mission to land on the far side of the Moon.
 
 ## Roscosmos (Russian Federal Space Agency)
-[![Roscosmos Soyuz](https://img.shields.io/badge/Roscosmos-Soyuz-purple)](https://www.roscosmos.ru)  
-[Roscosmos Soyuz](https://www.roscosmos.ru) - A series of spacecraft for human spaceflight.
+[![Roscosmos Progress](https://img.shields.io/badge/Roscosmos-Progress-purple)](https://www.roscosmos.ru)  
+[Roscosmos Progress](https://www.roscosmos.ru) - Automated cargo spacecraft for the ISS.
 
 ## SpaceX
-[![SpaceX Crew Dragon](https://img.shields.io/badge/SpaceX-Crew%20Dragon-lightblue)](https://www.spacex.com/launches/)  
-[SpaceX Crew Dragon](https://www.spacex.com/launches/) - A spacecraft designed to carry astronauts to the ISS.
+[![SpaceX Starship](https://img.shields.io/badge/SpaceX-Starship-lightblue)](https://www.spacex.com/vehicles/starship/)  
+[SpaceX Starship](https://www.spacex.com/vehicles/starship/) - A fully reusable spacecraft for missions to Mars and beyond.
 
 ## Blue Origin
-[![Blue Origin New Shepard](https://img.shields.io/badge/Blue%20Origin-New%20Shepard-orange)](https://www.blueorigin.com/)  
-[Blue Origin New Shepard](https://www.blueorigin.com/) - A suborbital spaceflight system for research and tourism.
+[![Blue Origin New Glenn](https://img.shields.io/badge/Blue%20Origin-New%20Glenn-orange)](https://www.blueorigin.com/)  
+[Blue Origin New Glenn](https://www.blueorigin.com/) - A heavy-lift launch vehicle for commercial payloads.
 
 ## International Space Station (ISS)
-[![ISS Expedition](https://img.shields.io/badge/ISS-Expedition-lightgrey)](https://www.nasa.gov/mission_pages/station/expeditions/index.html)  
-[International Space Station](https://www.nasa.gov/mission_pages/station/expeditions/index.html) - A habitable space station for international collaboration.
+[![ISS Research](https://img.shields.io/badge/ISS-Research-lightgrey)](https://www.nasa.gov/mission_pages/station/research/index.html)  
+[ISS Research](https://www.nasa.gov/mission_pages/station/research/index.html) - Conducting scientific research in microgravity.
 
 ## UNOOSA (United Nations Office for Outer Space Affairs)
-[![UNOOSA](https://img.shields.io/badge/UNOOSA-Office%20for%20Outer%20Space%20Affairs-blue)](https://www.unoosa.org)  
-[UNOOSA](https://www.unoosa.org) - Promotes international cooperation in the peaceful use of outer space.
+[![UNOOSA Space4Women](https://img.shields.io/badge/UNOOSA-Space4Women-blue)](https://www.unoosa.org/oosa/en/ourwork/space4women/index.html)  
+[UNOOSA Space4Women](https://www.unoosa.org/oosa/en/ourwork/space4women/index.html) - Promoting gender equality in space activities.
+
+## NASA (National Aeronautics and Space Administration)
+[![NASA Perseverance](https://img.shields.io/badge/NASA-Perseverance-orange)](https://mars.nasa.gov/perseverance/)  
+[NASA Perseverance](https://mars.nasa.gov/perseverance/) - A rover mission to explore Mars.
+
+## ESA (European Space Agency)
+[![ESA ExoMars](https://img.shields.io/badge/ESA-ExoMars-blue)](https://exploration.esa.int/web/exomars)  
+[ESA ExoMars](https://exploration.esa.int/web/exomars) - A mission to search for signs of life on Mars.
+
+## ISRO (Indian Space Research Organisation)
+[![ISRO Gaganyaan](https://img.shields.io/badge/ISRO-Gaganyaan-red)](https://www.isro.gov.in/gaganyaan)  
+[ISRO Gaganyaan](https://www.isro.gov.in/gaganyaan ) - India's first crewed spacecraft.
+
+## JAXA (Japan Aerospace Exploration Agency)
+[![JAXA Smart Lander for Investigating Moon](https://img.shields.io/badge/JAXA-Smart%20Lander%20for%20Investigating%20Moon-green)](https://www.jaxa.jp/projects/selene_e/index_e.html)  
+[JAXA Smart Lander for Investigating Moon](https://www.jaxa.jp/projects/selene_e/index_e.html) - A mission to develop a precision landing technology for the Moon.
+
+## CNSA (China National Space Administration)
+[![CNSA Tiantan-1](https://img.shields.io/badge/CNSA-Tiantan%201-yellow)](http://www.cnsa.gov.cn)  
+[CNSA Tiantan-1](http://www.cnsa.gov.cn) - China's first space station.
+
+## Roscosmos (Russian Federal Space Agency)
+[![Roscosmos Nauka](https://img.shields.io/badge/Roscosmos-Nauka-purple)](https://www.roscosmos.ru)  
+[Roscosmos Nauka](https://www.roscosmos.ru) - A multipurpose space station module.
+
+## SpaceX
+[![SpaceX Starlink](https://img.shields.io/badge/SpaceX-Starlink-lightblue)](https://www.spacex.com/starlink/)  
+[SpaceX Starlink](https://www.spacex.com/starlink/) - A satellite constellation for global internet connectivity.
+
+## Blue Origin
+[![Blue Origin BE-4](https://img.shields.io/badge/Blue%20Origin-BE%204-orange)](https://www.blueorigin.com/)  
+[Blue Origin BE-4](https://www.blueorigin.com/) - A liquid methane-fueled rocket engine.
+
+## International Space Station (ISS)
+[![ISS Expedition 63](https://img.shields.io/badge/ISS-Expedition%2063-lightgrey)](https://www.nasa.gov/mission_pages/station/expeditions/expedition63/index.html)  
+[ISS Expedition 63](https://www.nasa.gov/mission_pages/station/expeditions/expedition63/index.html) - A crewed mission to the ISS.
+
+## UNOOSA (United Nations Office for Outer Space Affairs)
+[![UNOOSA Space2030](https://img.shields.io/badge/UNOOSA-Space2030-blue)](https://www.unoosa.org/oosa/en/ourwork/space2030/index.html)  
+[UNOOSA Space2030](https://www.unoosa.org/oosa/en/ourwork/space2030/index.html) - A framework for sustainable space development.
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/KOSASIH/ExoGenesis">ExoGenesis</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkedin.com/in/kosasih-81b46b5a">KOSASIH</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
 
